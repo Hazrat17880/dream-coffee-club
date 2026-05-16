@@ -1,9 +1,7 @@
-import React from 'react'
-
-function page() {
+export default function AnimationPage() {
   return (
-    <div>page</div>
+    <div>
+      Animation Page
+    </div>
   )
 }
-
-export default page

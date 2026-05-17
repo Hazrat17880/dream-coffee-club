@@ -673,6 +673,7 @@ export default function MenuDetailPage() {
             ))}
           </div>
         </div>
+        
 
       </div>
     </div>

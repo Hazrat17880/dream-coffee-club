@@ -74,7 +74,7 @@ const menuItems = [
         <div className="flex items-center gap-3">
           {/* Reserve Button */}
           <Link
-            href="/reservations"
+            href="/menu"
             className="hidden sm:block bg-[#FF6B35] hover:bg-[#e85a2a] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
           >
             Reserve Now

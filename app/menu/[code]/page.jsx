@@ -588,7 +588,7 @@ export default function MenuDetailPage() {
 
             <div className="px-8 pb-6 mt-auto flex flex-col sm:flex-row gap-3">
               <button
-                onClick={() => { window.location.href = 'tel:03151966852'; }}
+                 onClick={() => window.open(`https://wa.me/923151966852`, '_blank')}
                 className="flex-1 flex items-center justify-center gap-2.5 py-3.5 text-white hover:opacity-90 active:scale-[0.98] transition-all duration-300"
                 style={{ ...J, fontWeight: 600, fontSize: '11px', letterSpacing: '0.2em', textTransform: 'uppercase', background: '#1E1A16' }}
               >
@@ -598,7 +598,8 @@ export default function MenuDetailPage() {
                 Call to Order
               </button>
               <Link
-                href="/reservations"
+                // href="/reservations"
+                href="#"
                 className="flex-1 flex items-center justify-center gap-2.5 py-3.5 border hover:bg-[#C9913A] hover:border-[#C9913A] hover:text-white active:scale-[0.98] transition-all duration-300"
                 style={{ ...J, fontWeight: 500, fontSize: '11px', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C9913A', borderColor: '#C9913A' }}
               >
@@ -616,9 +617,9 @@ export default function MenuDetailPage() {
               </svg>
               <p style={{ ...J, fontWeight: 300, fontSize: '11px', color: '#C9B8A4' }}>
                 Prefer to call?{' '}
-                <a href="tel:03151966852" style={{ color: '#1E1A16', fontWeight: 500 }}
+                <a href="tel:923151966852" style={{ color: '#1E1A16', fontWeight: 500 }}
                   className="hover:text-[#C9913A] transition-colors duration-200">
-                  0315-1966852
+                  +923151966852
                 </a>
               </p>
             </div>

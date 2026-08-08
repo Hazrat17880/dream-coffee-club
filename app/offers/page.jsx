@@ -817,40 +817,85 @@ export default function OffersPage() {
         >
           RESERVE
         </div>
+<div
+  className="max-w-3xl mx-auto px-4 text-center relative z-10"
+  style={{
+    opacity: ctaInView ? 1 : 0,
+    transform: ctaInView ? 'translateY(0)' : 'translateY(20px)',
+    transition: 'opacity 0.6s ease, transform 0.6s ease',
+  }}
+>
+  <div className="w-4 h-[2px] bg-[#C9913A] mx-auto mb-5" />
+  <h2 style={{ 
+    ...C, 
+    fontWeight: 700, 
+    fontStyle: 'italic', 
+    fontSize: 'clamp(1.8rem, 4vw, 3rem)', 
+    color: '#1E1A16', 
+    lineHeight: 1.2, 
+    marginBottom: '12px' 
+  }}>
+    Ready to Save on Your Next Meal?
+  </h2>
+  <p style={{ 
+    ...J, 
+    fontWeight: 300, 
+    fontSize: '13px', 
+    color: '#9CA3AF', 
+    marginBottom: '32px' 
+  }}>
+    Book your table now and enjoy these amazing discounts in person.
+  </p>
+  
+  <div className="flex items-center justify-center gap-4 flex-wrap">
+    {/* Order Now - WhatsApp Button */}
+    <button
+      onClick={() => window.open('https://wa.me/923151966852', '_blank')}
+      className="flex items-center justify-center gap-2.5 px-8 py-3.5 text-white hover:opacity-90 active:scale-[0.98] transition-all duration-300"
+      style={{
+        fontWeight: 600,
+        fontSize: '11px',
+        letterSpacing: '0.2em',
+        textTransform: 'uppercase',
+        background: '#1E1A16',
+        borderRadius: '2px',
+        border: 'none',
+        cursor: 'pointer',
+        minWidth: '200px', // Added fixed minimum width
+        width: '100%', // Full width
+        maxWidth: '220px' // Maximum width limit
+      }}
+    >
+      <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.6">
+        <path d="M2 2h3l1.5 3.5-2 1.5a9 9 0 004 4l1.5-2L13.5 11v2a1 1 0 01-1 1C6.5 14 0 7.5 0 1.5A1 1 0 011 .5h1z"/>
+      </svg>
+      Order Now
+    </button>
 
-        <div
-          className="max-w-3xl mx-auto px-4 text-center relative z-10"
-          style={{
-            opacity: ctaInView ? 1 : 0,
-            transform: ctaInView ? 'translateY(0)' : 'translateY(20px)',
-            transition: 'opacity 0.6s ease, transform 0.6s ease',
-          }}
-        >
-          <div className="w-10 h-[2px] bg-[#C9913A] mx-auto mb-5" />
-          <h2 style={{ ...C, fontWeight: 700, fontStyle: 'italic', fontSize: 'clamp(1.8rem, 4vw, 3rem)', color: '#1E1A16', lineHeight: 1.2, marginBottom: '12px' }}>
-            Ready to Save on Your Next Meal?
-          </h2>
-          <p style={{ ...J, fontWeight: 300, fontSize: '13px', color: '#9CA3AF', marginBottom: '32px' }}>
-            Book your table now and enjoy these amazing discounts in person.
-          </p>
-          <div className="flex items-center justify-center gap-4 flex-wrap">
-            <Link
-              href="/reservations"
-              className="flex items-center gap-2 px-8 py-3 text-white hover:opacity-90 transition-opacity"
-              style={{ ...J, fontWeight: 600, fontSize: '11px', letterSpacing: '0.2em', textTransform: 'uppercase', background: '#1E1A16', borderRadius: '2px' }}
-            >
-              Book a Table
-              <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"><path d="M2 7h10M7 3l4 4-4 4"/></svg>
-            </Link>
-            <a
-              href="tel:03151966852"
-              className="flex items-center gap-2 px-8 py-3 border border-[#1E1A16] text-[#1E1A16] hover:bg-[#1E1A16] hover:text-white transition-all duration-300"
-              style={{ ...J, fontWeight: 400, fontSize: '11px', letterSpacing: '0.2em', textTransform: 'uppercase', borderRadius: '2px' }}
-            >
-              Call Us: 0315-1966852
-            </a>
-          </div>
-        </div>
+    {/* Call Us Button */}
+    <a
+      href="tel:+923151966852"
+      className="flex items-center justify-center gap-2.5 px-8 py-3.5 border border-[#1E1A16] text-[#1E1A16] hover:bg-[#1E1A16] hover:text-white transition-all duration-300"
+      style={{ 
+        ...J, 
+        fontWeight: 400, 
+        fontSize: '11px', 
+        letterSpacing: '0.2em', 
+        textTransform: 'uppercase', 
+        borderRadius: '2px',
+        textDecoration: 'none',
+        minWidth: '200px', // Same minimum width
+        width: '100%', // Same full width
+        maxWidth: '220px' // Same maximum width
+      }}
+    >
+      <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.6">
+        <path d="M2 2h3l1.5 3.5-2 1.5a9 9 0 004 4l1.5-2L13.5 11v2a1 1 0 01-1 1C6.5 14 0 7.5 0 1.5A1 1 0 011 .5h1z"/>
+      </svg>
+      Call Us
+    </a>
+  </div>
+</div>
       </section>
     </div>
   );

@@ -70,7 +70,7 @@ function ContactPage() {
     {
       icon: "📍",
       title: "Visit Us",
-      details: ["123 Foodie Street,", "Downtown District,", "New York, NY 10001"],
+      details: ["Opposite Mardan Medical Complete,", "District Mardan,", "Khyber Pakhtunkhwa"],
       color: "from-amber-500 to-orange-500",
       action: "Get Directions",
       link: "#",
@@ -78,15 +78,15 @@ function ContactPage() {
     {
       icon: "📞",
       title: "Call Us",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+      details: ["+923151966852"],
       color: "from-emerald-500 to-teal-500",
       action: "Call Now",
-      link: "tel:+15551234567",
+      link: "tel:+923151966852",
     },
     {
       icon: "✉️",
       title: "Email Us",
-      details: ["hello@cafename.com", "reservations@cafename.com"],
+      details: ["hello@dreamcoffeeclub.com", "reservations@dreamcoffeeclub.com"],
       color: "from-purple-500 to-pink-500",
       action: "Send Email",
       link: "mailto:hello@cafename.com",
@@ -94,7 +94,7 @@ function ContactPage() {
     {
       icon: "⏰",
       title: "Opening Hours",
-      details: ["Monday - Friday: 8AM - 11PM", "Saturday - Sunday: 9AM - 12AM"],
+      details: ["24 Hours Service"],
       color: "from-blue-500 to-cyan-500",
       action: "View Calendar",
       link: "#",
@@ -415,7 +415,7 @@ function ContactPage() {
                   </div>
                   <div>
                     <div className="text-sm text-gray-500">Call us now</div>
-                    <div className="font-bold text-gray-900">+1 (555) 123-4567</div>
+                    <div className="font-bold text-gray-900">+923151966852</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -424,7 +424,7 @@ function ContactPage() {
                   </div>
                   <div>
                     <div className="text-sm text-gray-500">Response time</div>
-                    <div className="font-bold text-gray-900">Within 24 hours</div>
+                    <div className="font-bold text-gray-900">Within 1 hour</div>
                   </div>
                 </div>
               </div>
@@ -471,32 +471,86 @@ function ContactPage() {
         </div>
       </section>
 
-      {/* SOCIAL MEDIA SECTION */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Follow Our Journey</h2>
-          <p className="text-gray-600 mb-8">Stay connected with us on social media for updates, offers, and mouth-watering photos</p>
+    {/* SOCIAL MEDIA SECTION */}
+<section className="py-20 bg-gradient-to-b from-white to-gray-50/50">
+  <div className="max-w-7xl mx-auto px-4">
+    <div className="text-center mb-12">
+      <div className="flex items-center justify-center gap-4 mb-4">
+        <div className="w-12 h-[2px] bg-gradient-to-r from-transparent to-[#C9913A] rounded-full" />
+        <span className="text-[#C9913A] text-sm font-semibold tracking-[0.3em] uppercase">
+          Connect With Us
+        </span>
+        <div className="w-12 h-[2px] bg-gradient-to-l from-transparent to-[#C9913A] rounded-full" />
+      </div>
+      
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+        Follow Our <span className="text-[#C9913A] italic">Journey</span>
+      </h2>
+      <p className="text-gray-500 max-w-2xl mx-auto text-lg">
+        Stay connected with us on social media for updates, offers, and mouth-watering photos
+      </p>
+    </div>
+    
+    <div className="flex flex-wrap justify-center gap-4">
+      {[
+        { 
+          name: "Instagram", 
+          icon: "📸", 
+          color: "from-[#E4405F] to-[#F58529]",
+          link: "#" 
+        },
+        { 
+          name: "Facebook", 
+          icon: "📘", 
+          color: "from-[#1877F2] to-[#0D65D9]",
+          link: "#" 
+        },
+        { 
+          name: "Twitter/X", 
+          icon: "🐦", 
+          color: "from-[#1DA1F2] to-[#0D8BD9]",
+          link: "#" 
+        },
+        { 
+          name: "TripAdvisor", 
+          icon: "⭐", 
+          color: "from-[#00AF87] to-[#008C6A]",
+          link: "#" 
+        },
+        { 
+          name: "YouTube", 
+          icon: "▶️", 
+          color: "from-[#FF0000] to-[#CC0000]",
+          link: "#" 
+        },
+        { 
+          name: "TikTok", 
+          icon: "🎵", 
+          color: "from-[#000000] to-[#25F4EE]",
+          link: "#" 
+        },
+      ].map((social, index) => (
+        <a
+          key={index}
+          href={social.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`group inline-flex items-center gap-3 px-7 py-4 bg-gradient-to-r ${social.color} text-white rounded-2xl font-semibold shadow-lg hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 relative overflow-hidden`}
+        >
+          {/* Shine effect */}
+          <span className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
           
-          <div className="flex flex-wrap justify-center gap-4">
-            {[
-              { name: "Instagram", icon: "📸", color: "from-pink-500 to-orange-500", link: "#" },
-              { name: "Facebook", icon: "📘", color: "from-blue-600 to-blue-800", link: "#" },
-              { name: "Twitter", icon: "🐦", color: "from-sky-500 to-blue-500", link: "#" },
-              { name: "TripAdvisor", icon: "⭐", color: "from-emerald-500 to-teal-500", link: "#" },
-              { name: "YouTube", icon: "▶️", color: "from-red-500 to-red-700", link: "#" },
-            ].map((social, index) => (
-              <a
-                key={index}
-                href={social.link}
-                className={`group inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r ${social.color} text-white rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300`}
-              >
-                <span className="text-xl">{social.icon}</span>
-                <span>{social.name}</span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+          <span className="text-2xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 relative z-10">
+            {social.icon}
+          </span>
+          <span className="text-sm tracking-wide font-medium relative z-10">
+            {social.name}
+          </span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* NEWSLETTER SECTION */}
       <section className="py-16 bg-gradient-to-r from-gray-900 to-gray-800">
@@ -524,20 +578,7 @@ function ContactPage() {
         </div>
       </section>
 
-      {/* BOTTOM CTA BAR */}
-      <section className="py-6 bg-amber-500">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-white text-center md:text-left">
-              <span className="font-semibold">📅 Ready to visit us?</span>
-              <span className="text-white/90"> Book your table now and get a complimentary welcome drink!</span>
-            </div>
-            <button className="px-6 py-2 bg-white text-amber-600 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-              Reserve a Table →
-            </button>
-          </div>
-        </div>
-      </section>
+    
     </div>
   );
 }

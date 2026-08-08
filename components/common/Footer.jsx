@@ -40,10 +40,10 @@ const FooterSimple = () => {
   ];
 
   const contactInfo = [
-    { icon: FaMapMarkerAlt, text: "123 Food Street, Lahore, Pakistan" },
-    { icon: FaPhone, text: "+92 300 1234567" },
-    { icon: FaEnvelope, text: "info@dreamrestaurant.com" },
-    { icon: FaClock, text: "Mon-Sun: 11:00 AM - 12:00 AM" },
+    { icon: FaMapMarkerAlt, text: "Opposite Mardan Medical Complex,Khyber Pakhtunkhwa, Pakistan" },
+    { icon: FaPhone, text: "+92 315 1966852" },
+    { icon: FaEnvelope, text: "info@dreamcoffeeclub.com" },
+    { icon: FaClock, text: "24 Hours Service" },
   ];
 
   const popularItems = [

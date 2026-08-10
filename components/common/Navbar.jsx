@@ -126,7 +126,7 @@ const menuItems = [
 
           {/* Mobile Button */}
           <Link
-            href="/reservations"
+            href="/menu"
             onClick={() => setIsMobileMenuOpen(false)}
             className="sm:hidden bg-[#FF6B35] text-white text-center text-[14px] font-semibold px-6 py-3 rounded-full mt-4"
           >

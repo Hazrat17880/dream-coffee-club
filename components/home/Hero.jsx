@@ -136,9 +136,10 @@ export default function Hero() {
                 <div className="absolute -inset-6 rounded-full border border-[#C77A3F]/10" />
                 
                 {/* Image circle */}
-                <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl ring-4 ring-white">
+                 <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl ring-4 ring-white">
                   <Image
-                    src="/hero/hero.jpg"
+                    // src="/hero/hero.jpg"
+                    src="/hero/hero2.jpeg"
                     alt="Signature dish presentation"
                     fill
                     className="object-cover scale-105 hover:scale-110 transition-transform duration-700"

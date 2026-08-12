@@ -19,7 +19,7 @@ function MenuPage() {
   const soups = [
     { id: 1, name: "Hot-Sour-Soup", displayName: "Hot & Sour Soup", small: 199, large: 799, description: "Spicy and tangy Chinese soup with tofu, mushrooms, bamboo shoots, and eggs", image: "/menupage/soup/s1.jpg" },
     { id: 2, name: "Chicken-Corn-Soup", displayName: "Chicken Corn Soup", small: 199, large: 799, description: "Creamy soup with sweet corn, shredded chicken, and egg drops", image: "/menupage/soup/s2.jpg" },
-    { id: 3, name: "Dream-Special-Soup", displayName: "Dream Special Soup", small: 199, large: 799, description: "Rich and creamy soup with mixed vegetables and herbs", image: "/menupage/soup/s3.jpg" }, // Fixed description
+    { id: 3, name: "Dream-Special-Soup", displayName: "Dream Special Soup", small: 299, large: 799, description: "Rich and creamy soup with mixed vegetables and herbs", image: "/menupage/soup/s3.jpg" }, // Fixed description
   ];
 
   // SALADS

@@ -139,7 +139,7 @@ export default function Hero() {
                  <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl ring-4 ring-white">
                   <Image
                     // src="/hero/hero.jpg"
-                    src="/hero/hero2.jpeg"
+                    src="/hero/hero3.jpeg"
                     alt="Signature dish presentation"
                     fill
                     className="object-cover scale-105 hover:scale-110 transition-transform duration-700"
